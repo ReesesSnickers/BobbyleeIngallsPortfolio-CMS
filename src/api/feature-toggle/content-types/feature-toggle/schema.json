@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_toggles",
+  "info": {
+    "singularName": "feature-toggle",
+    "pluralName": "feature-toggles",
+    "displayName": "Feature Toggle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Enabled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Toggle": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

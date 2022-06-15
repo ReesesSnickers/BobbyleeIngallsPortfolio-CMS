@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "additional": {
+      "type": "json"
+    },
+    "startDateString": {
+      "type": "string",
+      "required": true
+    },
+    "endDateString": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
